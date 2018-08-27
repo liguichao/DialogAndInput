@@ -1,3 +1,7 @@
 <resources>
     <string name="app_name">DialogAndInput</string>
+    <string name="dialog_title">DialogAndInput</string>
+    <string name="dialog_view">DialogShowView</string>
+    <string name="confirm">Determine</string>
+    <string name="cancel">Cancel</string>
 </resources>
