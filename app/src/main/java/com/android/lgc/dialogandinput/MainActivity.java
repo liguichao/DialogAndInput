@@ -11,6 +11,7 @@ import android.view.LayoutInflater;
 import android.view.View;
 import android.widget.EditText;
 import android.widget.TextView;
+import android.widget.Toast;
 
 public class MainActivity extends AppCompatActivity {
     public static final String TAG = MainActivity.class.getSimpleName();
@@ -41,8 +42,8 @@ public class MainActivity extends AppCompatActivity {
 
     public void loginDialog(View view) {
         View viewGroup = LayoutInflater.from(MainActivity.this).inflate(R.layout.login_dialog, null);
-        final EditText editTextAccount = (EditText) viewGroup.findViewById(R.id.editTextPassword);
-        final EditText editTextPassword = (EditText) viewGroup.findViewById(R.id.editTextAccount);
+        final EditText editTextAccount = (EditText) viewGroup.findViewById(R.id.editTextAccount);
+        final EditText editTextPassword = (EditText) viewGroup.findViewById(R.id.editTextPassword);
 
         new AlertDialog.Builder(MainActivity.this)
                 .setTitle(getString(R.string.dialog_title))
@@ -56,6 +57,22 @@ public class MainActivity extends AppCompatActivity {
                         String password = editTextPassword.getText().toString();
                         Log.d(TAG, "account:" + account);
                         Log.d(TAG, "password:" + password);
+                    }
+                })
+                .show();
+    }
+
+    public void searchDialog(View view) {
+        final EditText editText = new EditText(this);
+        new AlertDialog.Builder(this)
+                .setTitle("搜索")
+                .setView(editText)
+                .setNegativeButton("取消",null)
+                .setPositiveButton("确定", new DialogInterface.OnClickListener() {
+                    @Override
+                    public void onClick(DialogInterface dialogInterface, int i) {
+                        String input = editText.getText().toString();
+                        Log.d(TAG, "input:" + input);
                     }
                 })
                 .show();
