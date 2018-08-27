@@ -18,6 +18,13 @@
             android:layout_height="wrap_content"
             android:text="openInterfaceDialog" />
 
+        <Button
+            android:id="@+id/btnLoginDialog"
+            android:onClick="loginDialog"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="loginDialog" />
+
     </LinearLayout>
 
 </android.support.constraint.ConstraintLayout>
