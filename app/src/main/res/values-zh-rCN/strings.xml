@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">对话框的输入测试</string>
+    <string name="button_text_open_interface_dialog">接口对话框</string>
+    <string name="button_text_login_dialog">登录对话框</string>
+    <string name="button_text_search_dialog">搜索对话框</string>
+    <string name="text_view_dialog_title">对话框输入</string>
+    <string name="text_view_dialog_view">对话框输入内容</string>
+    <string name="text_view_confirm">确认</string>
+    <string name="text_view_cancel">取消</string>
+    <string name="edit_text_account_hint">请输入姓名</string>
+    <string name="edit_text_password_hint">请输入密码</string>
+    <string name="edit_text_prompt_password_hint">请输入密码提示</string>
+    <string name="text_view_account">姓名：</string>
+    <string name="text_view_password">密码：</string>
+    <string name="text_view_prompt_password">密码提示：</string>
+</resources>

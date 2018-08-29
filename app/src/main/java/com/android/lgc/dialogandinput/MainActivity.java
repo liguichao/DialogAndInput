@@ -10,6 +10,7 @@ import android.view.LayoutInflater;
 import android.view.View;
 import android.view.WindowManager;
 import android.view.inputmethod.EditorInfo;
+import android.widget.Button;
 import android.widget.EditText;
 import android.widget.TextView;
 
@@ -24,15 +25,15 @@ public class MainActivity extends AppCompatActivity {
 
     public void openInterfaceDialog(View view) {
         TextView msg = new TextView(this);
-        msg.setText(R.string.dialog_view);
+        msg.setText(R.string.text_view_dialog_view);
         msg.setPadding(10, 10, 10, 10);
         msg.setGravity(Gravity.CENTER);
         msg.setTextSize(18);
         new AlertDialog.Builder(MainActivity.this)
-                .setTitle(getString(R.string.dialog_title))
+                .setTitle(getString(R.string.text_view_dialog_title))
                 .setView(msg)
-                .setNegativeButton(getString(R.string.cancel), null)
-                .setPositiveButton(getString(R.string.confirm), new DialogInterface.OnClickListener() {
+                .setNegativeButton(getString(R.string.text_view_cancel), null)
+                .setPositiveButton(getString(R.string.text_view_confirm), new DialogInterface.OnClickListener() {
                     public void onClick(DialogInterface dialog, int which) {
                     }
                 })
@@ -46,11 +47,11 @@ public class MainActivity extends AppCompatActivity {
         final EditText editTextPasswordPrompt = (EditText) viewGroup.findViewById(R.id.editTextPasswordPrompt);
 
         AlertDialog.Builder builder = new AlertDialog.Builder(this);
-        builder.setTitle(getString(R.string.dialog_title));
+        builder.setTitle(getString(R.string.text_view_dialog_title));
         builder.setView(viewGroup);
         builder.setCancelable(false);//设置这个对话框不能被用户按[返回键]而取消掉
-        builder.setNegativeButton(getString(R.string.cancel), null);
-        builder.setPositiveButton(getString(R.string.confirm), new DialogInterface.OnClickListener() {
+        builder.setNegativeButton(getString(R.string.text_view_cancel), null);
+        builder.setPositiveButton(getString(R.string.text_view_confirm), new DialogInterface.OnClickListener() {
             @Override
             public void onClick(DialogInterface dialogInterface, int i) {
                 String account = editTextAccount.getText().toString();
@@ -63,6 +64,7 @@ public class MainActivity extends AppCompatActivity {
         });
         AlertDialog alertDialog = builder.create();
         alertDialog.show();
+        // 横竖屏切换时不自动退出对话框
         WindowManager.LayoutParams layoutParams = alertDialog.getWindow().getAttributes();
 //        layoutParams.width=350;//定义宽度
 //        layoutParams.height=300;//定义高度

@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">DialogAndInput</string>
+    <string name="button_text_open_interface_dialog">InterfaceDialog</string>
+    <string name="button_text_login_dialog">LoginDialog</string>
+    <string name="button_text_search_dialog">SearchDialog</string>
+    <string name="text_view_dialog_title">DialogAndInput</string>
+    <string name="text_view_dialog_view">DialogShowView</string>
+    <string name="text_view_confirm">Determine</string>
+    <string name="text_view_cancel">Cancel</string>
+    <string name="edit_text_account_hint">input name</string>
+    <string name="edit_text_password_hint">input password</string>
+    <string name="edit_text_prompt_password_hint">input prompt</string>
+    <string name="text_view_account">Name:</string>
+    <string name="text_view_password">Password:</string>
+    <string name="text_view_prompt_password">Prompt:</string>
+</resources>

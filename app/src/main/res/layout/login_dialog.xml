@@ -13,7 +13,7 @@
             android:id="@+id/textViewAccount"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="用户名：" />
+            android:text="@string/text_view_account" />
 
         <EditText
             android:id="@+id/editTextAccount"
@@ -21,7 +21,7 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:focusable="true"
-            android:hint="input name" />
+            android:hint="@string/edit_text_account_hint" />
     </LinearLayout>
 
     <LinearLayout
@@ -33,14 +33,14 @@
             android:id="@+id/textViewPassword"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="密码：" />
+            android:text="@string/text_view_password" />
 
         <EditText
             android:id="@+id/editTextPassword"
             android:imeOptions="flagNoExtractUi"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:hint="input password" />
+            android:hint="@string/edit_text_password_hint" />
     </LinearLayout>
 
     <LinearLayout
@@ -52,14 +52,14 @@
             android:id="@+id/textViewPasswordPrompt"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="密码提示：" />
+            android:text="@string/text_view_prompt_password" />
 
         <EditText
             android:id="@+id/editTextPasswordPrompt"
             android:imeOptions="flagNoExtractUi"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:hint="prompt password" />
+            android:hint="@string/edit_text_prompt_password_hint" />
     </LinearLayout>
 
 </LinearLayout>

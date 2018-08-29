@@ -16,21 +16,21 @@
             android:onClick="openInterfaceDialog"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:text="openInterfaceDialog" />
+            android:text="@string/button_text_open_interface_dialog" />
 
         <Button
             android:id="@+id/btnLoginDialog"
             android:onClick="loginDialog"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:text="loginDialog" />
+            android:text="@string/button_text_login_dialog" />
 
         <Button
             android:id="@+id/buttonSearch"
             android:onClick="searchDialog"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:text="Search" />
+            android:text="@string/button_text_search_dialog" />
 
     </LinearLayout>
 
