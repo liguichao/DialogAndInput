@@ -16,6 +16,7 @@
             android:onClick="openInterfaceDialog"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
+            android:textAllCaps="false"
             android:text="@string/button_text_open_interface_dialog" />
 
         <Button
@@ -23,6 +24,7 @@
             android:onClick="loginDialog"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
+            android:textAllCaps="false"
             android:text="@string/button_text_login_dialog" />
 
         <Button
@@ -30,6 +32,7 @@
             android:onClick="searchDialog"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
+            android:textAllCaps="false"
             android:text="@string/button_text_search_dialog" />
 
     </LinearLayout>

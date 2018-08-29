@@ -64,6 +64,11 @@ public class MainActivity extends AppCompatActivity {
         });
         AlertDialog alertDialog = builder.create();
         alertDialog.show();
+        // 确认和取消的英文区分大小写
+        Button negativeButton = alertDialog.getButton(AlertDialog.BUTTON_NEGATIVE);
+        Button positiveButton = alertDialog.getButton(AlertDialog.BUTTON_POSITIVE);
+        negativeButton.setTextAppearance(this, R.style.MyCustomTabTextAppearance);
+        positiveButton.setTextAppearance(this, R.style.MyCustomTabTextAppearance);
         // 横竖屏切换时不自动退出对话框
         WindowManager.LayoutParams layoutParams = alertDialog.getWindow().getAttributes();
 //        layoutParams.width=350;//定义宽度
